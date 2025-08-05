@@ -267,7 +267,7 @@ public class BasePredictor: Predictor, @unchecked Sendable {
   /// The maximum number of detections to return in results (default: 30).
   ///
   /// Limits the number of detection items in the final results to prevent overwhelming processing.
-  var numItemsThreshold = 30
+  var numItemsThreshold = 999
 
   /// Sets the maximum number of detection items to include in results.
   ///
