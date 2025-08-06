@@ -125,7 +125,7 @@ class ObjectDetector: BasePredictor, @unchecked Sendable {
     do {
       try requestHandler.perform([request])
       if let results = request.results as? [VNRecognizedObjectObservation] {
-        for i in 0..<100 {
+        for i in 0..<results.count {
           if i < results.count && i < self.numItemsThreshold {
             let prediction = results[i]
             let invertedBox = CGRect(
